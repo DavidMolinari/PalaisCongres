@@ -43,9 +43,9 @@ class Client
     private $adresse;
 
     /**
-     * @var int
+     * @var integer
      *
-     * @ORM\Column(name="cp", type="int")
+     * @ORM\Column(name="cp", type="integer")
      */
     private $cp;
 

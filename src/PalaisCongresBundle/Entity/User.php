@@ -1,7 +1,7 @@
 <?php
 // src/AppBundle/Entity/User.php
 
-namespace AppBundle\Entity;
+namespace PalaisCongresBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -24,13 +24,4 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
     }
-
-    /**
-     * retourne le client selon son id
-     * @param $id id du client
-     */
-    public function getClient($id){
-        //TODO return le client par id
-    }
-
 }

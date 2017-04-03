@@ -4,7 +4,7 @@ palais_congres:
     prefix:   /
 
 app:
-    resource: '@AppBundle/Controller/'
+    resource: '@PalaisCongresBundle/Controller/'
     type: annotation
 # app/config/routing.yml
 fos_user_security:
