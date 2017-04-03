@@ -2,6 +2,12 @@
 
 namespace PalaisCongresBundle\Repository;
 
+use Doctrine;
+use PalaisCongresBundle\Entity\Client;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
+
 /**
  * ClientRepository
  *
@@ -10,4 +16,11 @@ namespace PalaisCongresBundle\Repository;
  */
 class ClientRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function setDavUser($zizi){
+        $me = new Client($zizi);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($me);
+        $em->flush();
+
+    }
 }

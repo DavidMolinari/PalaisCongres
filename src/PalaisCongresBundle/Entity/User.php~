@@ -69,22 +69,11 @@ class User extends BaseUser
     protected $fax;
 
 
-    public function __construct()
+    public function __construct($n, $p)
     {
         parent::__construct();
-
-        $this->setNom("MOLINARIUS");
-        $this->setPrenom("DAVIDUS");
-        $this->setUsername("davfdsfdsvv");
-        $this->setPassword("dav");
-        $this->setEmail("dav@daffv.fr");
-        $this->setAdresse("meh");
-        $this->setCp(99);
-        $this->setFax("161616161616");
-        $this->setTel("123123123132");
-        $this->setVille("Toulon");
-
-
+        $this->setNom($n);
+        $this->setPrenom($p);
 
     }
 

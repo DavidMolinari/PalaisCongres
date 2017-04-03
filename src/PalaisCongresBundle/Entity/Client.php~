@@ -57,10 +57,10 @@ class Client extends User
     /**
      * Client constructor.
      */
-    function __construct($zizi)
+    function __construct()
     {
         parent::__construct();
-        $this->setTailleZizi($zizi);
+        $this->setTailleZizi(69);
 
     }
 
