@@ -1,0 +1,4 @@
+services:
+#    palais_congres.example:
+#        class: PalaisCongresBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
